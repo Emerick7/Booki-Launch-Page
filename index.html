@@ -11,7 +11,7 @@
     </head>
     <body>
         <header class="header-launch-page">
-            <img src="images/logo/Booki.png" class="logo-booki"/>
+            <a href="#"><img src="images/logo/Booki.png" alt="Booki_Logo" class="logo-booki"/></a>
             <nav>
                 <ul class="nav-list">
                     <li>
@@ -23,9 +23,37 @@
                 </ul>
             </nav>
         </header>
-        
-        <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <main>
+            <section>
+                <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2 class="main-subtitle">En plein centre-ville ou en pleine nature</h2>
+            </section>
 
-        <i class="fa-solid fa-money-bill-wave"></i>
+            <section>
+                <form method="get" action="" class="search-form">
+                    <label for="Search-Location" class="label-logo-location"><i class="fa-solid fa-location-dot"></i></label>
+                    <input type="text" class="input-search" id="Search-Location" name="Rechercher-Lieu" value="Marseille, France" placeholder="Exemple: Paris, France" maxlengh="30" required/>
+                    <button type="submit" class="submit-text">Rechercher</button>
+                    <button type="submit" class="submit-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+                <div class="search-filters">
+                    <h3 class="filters-title">Filtres</h3>
+                    <button class="buttons-filters"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                    <button class="buttons-filters"><i class="fa-solid fa-person"></i>Familial</button>
+                    <button class="buttons-filters"><i class="fa-solid fa-heart"></i>Romantique</button>
+                    <button class="buttons-filters"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+                </div>
+
+                <div class="infobar">
+                    <div class="info-logo"><i class="fa-solid fa-info"></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
+
+        </main>
+        
+        
     </body>
 </html>
