@@ -332,7 +332,12 @@ div.tiles-group-heb article.tiles-heb:last-of-type
     margin-right: 2px;
 }
 
-#grey-star
+div.heb-rate i:last-of-type
+{
+    color: #F2F2F2;
+}
+
+div.pop-rate i:last-of-type
 {
     color: #F2F2F2;
 }
