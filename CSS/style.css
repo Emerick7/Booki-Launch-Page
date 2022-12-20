@@ -254,7 +254,7 @@ nav a
     padding-left: 40px;
     padding-right: 40px;
     height: 626px;
-    width: 60%;
+    width: 66.5%;
 }
 
 .heb-section-title
@@ -523,7 +523,7 @@ div.tiles-group-act article.tiles-act:last-of-type
     background: #F2F2F2;
 }
 
-.box-footer
+div.box-footer
 {
     margin-right: 20%;
 }
