@@ -181,6 +181,8 @@ nav a
 
 .buttons-filters
 {
+    display: flex;
+    flex-direction: row;
     margin-right: 43px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -191,6 +193,7 @@ nav a
     color: #000000;
     padding: 14px 20px 14px 20px;
     background: none;
+    white-space: nowrap;
 }
 
 .buttons-filters:hover
@@ -279,6 +282,8 @@ nav a
     width: 33%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-right: 30px;
+    block-size: fit-content;
+    padding-bottom: 10px;
 }
 
 div.tiles-group-heb article.tiles-heb:last-of-type
@@ -348,6 +353,7 @@ div.pop-rate i:last-of-type
     line-height: 21px;
     color: #000000;
     border-style: none;
+    background: #F2F2F2;
 }
 
 .heb-populaires
@@ -412,6 +418,7 @@ div.pop-rate i:last-of-type
     width: 100%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-bottom: 33px;
+    block-size: fit-content;
 }
 
 .info-pop
@@ -538,6 +545,7 @@ h3.box-footer-title
     line-height: 21px;
     color: #000000;
     margin: 0 0 20px 0;
+    white-space: nowrap;
 }
 
 .links-list
@@ -558,4 +566,69 @@ a.list-footer-link
     line-height: 19px;
     color: #000000;
     text-decoration: none;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 992px) {
+    .filters-title
+    {
+        margin-right: 17px;
+    }
+    
+    .buttons-filters
+    {
+        margin-right: 22px;
+    }
+    
+    .section-heb-pop
+    {
+        flex-direction: column;
+    }
+
+    .heb-section
+    {
+        width: auto;
+    }
+
+    .heb-populaires
+    {
+        left: auto;
+        width: auto;
+        margin: 50px 0 0 0;
+        height: 278px;
+    }
+
+    .tiles-group-pop
+    {
+        flex-direction: row;
+    }
+
+    .tiles-pop
+    {
+        margin: 0 23px 0 0;
+    }
+
+    div.tiles-group-pop article.tiles-pop:last-of-type
+    {
+        margin-right: 0px;
+    }
+
+    .tiles-act
+    {
+        height: 267px;
+    }
+
+    .img-presentation-act
+    {
+        height: 210px;
+    }
+
+    div.box-footer
+    {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
 }
