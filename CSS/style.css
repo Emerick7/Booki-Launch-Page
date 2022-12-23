@@ -169,6 +169,13 @@ nav a
     align-items: center;
 }
 
+.button-group
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .filters-title
 {
     margin-right: 32px;
@@ -194,6 +201,12 @@ nav a
     padding: 14px 20px 14px 20px;
     background: none;
     white-space: nowrap;
+}
+
+
+.button-group button.buttons-filters:last-of-type
+{
+    margin-right: 0;
 }
 
 .buttons-filters:hover
@@ -425,7 +438,7 @@ div.pop-rate i:last-of-type
 {
     display: flex;
     flex-direction: column;
-    margin: 16px 22px 12px 15px;
+    margin: 16px 0px 12px 14px;
     justify-content: space-between;
 }
 
@@ -569,15 +582,53 @@ a.list-footer-link
     white-space: nowrap;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body
+    {
+        margin: 0 70px 0 70px;
+    }
+
+    .logo-booki
+    {
+        margin-left: 0px;
+    }
+
+    .main-title
+    {
+        margin-left: 0px;
+    }
+
+    .main-subtitle
+    {
+        margin-left: 0px;
+    }
+
+    .search-form
+    {
+        margin-left: 0px;
+    }
+
+    .search-filters
+    {
+        margin-left: 0px;
+    }
+    
     .filters-title
     {
         margin-right: 17px;
+        font-size: 16px;
     }
     
     .buttons-filters
     {
         margin-right: 22px;
+        font-size: 15px;
+        padding: 14px 10px 14px 10px;
+    }
+
+    .infobar
+    {
+        margin-left: 0px;
     }
     
     .section-heb-pop
@@ -588,6 +639,22 @@ a.list-footer-link
     .heb-section
     {
         width: auto;
+    }
+
+    .heb-title
+    {
+        margin: 5px 0 10px 12px;
+        font-size: 14px;
+    }
+
+    .heb-desc
+    {
+        margin: 0 0 10px 12px;
+    }
+
+    .heb-rate
+    {
+        margin: 0 0 0 12px;
     }
 
     .heb-populaires
@@ -613,6 +680,26 @@ a.list-footer-link
         margin-right: 0px;
     }
 
+    .info-pop
+    {
+        margin: 12px 5px 12px 10px;
+    }
+
+    .pop-title
+    {
+        font-size: 14px;
+    }
+
+    .pop-desc
+    {
+        font-size: 13px
+    }
+
+    .pop-title, .pop-desc
+    {
+        line-height: 15px;
+    }
+
     .tiles-act
     {
         height: 267px;
@@ -625,10 +712,252 @@ a.list-footer-link
 
     div.box-footer
     {
-        margin-right: 10%;
+        margin-right: 5%;
+    }
+
+    .footer-main-page
+    {
+        padding: 45px 0 0 70px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    body
+    {
+        margin: 0px;
+    }
     
+    .header-launch-page
+    {
+        flex-direction: column;
+    }
+
+    .header-launch-page a:first-of-type
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo-booki
+    {
+        margin: 20px 0 50px 0;
+    }
+
+    .nav-list
+    {
+        padding: 0px;
+    }
+
+    .nav-list-heb
+    {
+        padding: 0 32px 23px 32px;
+    }
+
+    .nav-list-act
+    {
+        padding: 0 65px 23px 60px;
+    }
+
+    nav a:hover
+    {
+        border-bottom: solid 3px #0065FC;
+        border-top: none;
+        padding-top: 0px;
+    }
+
+    h1.main-title
+    {
+        margin: 30px 60px 13px 20px;
+    }
+
+    h2.main-subtitle
+    {
+        margin: 0 0 36px 20px;
+    }
+
+    .submit-icon
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 16px;
+        position: relative;
+        left: -2px;
+        background: #0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        z-index: 2;
+    }
+
+    .submit-text
+    {
+        display: none;
+    }
+
+    .search-form
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .search-filters
+    {
+        flex-direction: column;
+        margin-left: 12px;
+        margin-top: 30px;
+        align-items: flex-start;
+        margin: 34px 0 0 20px;
+    }
+
+    .button-group
+    {
+        display: grid;
+        grid-template-columns: 160px 160px;
+        gap: 15px;
+    }
+
+    .buttons-filters
+    {
+        height: 50px;
+        width: 160px;
+        font-size: 11px;
+        line-height: 13px;
+        margin-right: 0px;
+        padding: 17px 0 0 13px;
+    }
+
+    .buttons-filters i
+    {
+        font-size: 22px;
+        position: relative;
+        bottom: 4px;
+    }
+
+    .infobar
+    {
+        margin: 40px 20px 0 20px;
+        align-items: flex-start;
+    }
+
+    .info-logo i
+    {
+        position: relative;
+        left: 7px;
+        top: 0;
+    }
+
+    .infobar p
+    {
+        margin: 0;
+    }
+
+    .section-heb-pop
+    {
+        margin-top: 40px;
+    }
+
+    .section-heb-pop
+    {
+        flex-direction: column-reverse;
+    }
+
+    .heb-populaires
+    {
+        left: auto;
+        width: auto;
+        border-radius: 0;
+        height: 555px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-pop
+    {
+        margin-top: 28px;
+        margin-bottom: 26px;
+    }
+
+    .tiles-pop
+    {
+        margin-bottom: 10px;
+    }
+
+    .heb-section
+    {
+        width: auto;
+        border-radius: 0;
+        background: none;
+        margin: 26px 20px 105px 20px;
+        padding: 0;
+        height: 1300px;
+    }
+
+    .heb-section-title
+    {
+        margin: 0 0 19px 0;
+    }
+
+    .tiles-group-heb
+    {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .tiles-heb
+    {
+        margin: 0 0 12px 0;
+        width: auto;
+    }
+
+    .show-more
+    {
+        display: none;
+    }
+
+    .activities
+    {
+        margin: 0 20px 80px 20px;
+    }
+
+    .act-section-title
+    {
+        margin: 0 0 24px 0;
+    }
+
+    .tiles-group-act
+    {
+        flex-direction: column;
+    }
+
+    .tiles-act
+    {
+        height: 190px;
+        width: auto;
+        margin: 0 0 24px 0;
+    }
+
+    .img-presentation-act
+    {
+        height: 134px;
+    }
+
+    .footer-main-page
+    {
+        margin: 0;
+        flex-direction: column;
+        height: 500px;
+        padding-left: 30px;
+    }
+
+    .box-footer
+    {
+        margin: 0 0 45px 0;
+    }
 }
