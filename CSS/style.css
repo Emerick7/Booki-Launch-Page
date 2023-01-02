@@ -9,6 +9,7 @@ body
 {
     max-width: 1400px;
     margin: 0 50px 0 50px;
+    margin: 0 auto;
 }
 
 .header-launch-page
@@ -582,7 +583,7 @@ a.list-footer-link
     white-space: nowrap;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 991px){
     body
     {
         margin: 0 70px 0 70px;
